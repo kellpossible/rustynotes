@@ -1,0 +1,8 @@
+[package]
+name = "rustynotes"
+version = "0.1.0"
+authors = ["Luke Frisken <l.frisken@gmail.com>"]
+
+[dependencies]
+rust-embed = "3.0.0"
+actix-web = "0.7"
