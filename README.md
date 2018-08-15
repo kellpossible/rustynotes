@@ -22,6 +22,8 @@ Simple HTTP GET and POST interface with Sqlite backend using rusqlite and actix-
 
 Improve the user interface using some of the nice javascript libraries for laying out cards like google keep.
 
+ + https://github.com/desandro/masonry
+
 ### Version 0.3
 
 Implement WEBASSEMBLY IndexedDB and ServiceWorker with yew.
