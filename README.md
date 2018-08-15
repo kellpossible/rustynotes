@@ -16,7 +16,7 @@ This interface will be exposed in this order:
 
 ### Version 0.1
 
-Simple HTTP GET and POST interface with Sqlite backend using rusqlite and actix-web.
+Simple HTTP GET and POST interface with Sqlite backend using rusqlite and rocket.
 
 ### Version 0.2
 
