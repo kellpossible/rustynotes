@@ -26,6 +26,10 @@ Improve the user interface using some of the nice javascript libraries for layin
 
 ### Version 0.3
 
+Markdown export (export all as a zip of markdown documents), and markdown sync. Use Markdown documents instead of the database for storing the Markdown, and have the ability to sync to changes to these documents. This means you can edit and view your notes on your file system, and synchronise them with backup systems like dropbox, google drive, git, etc.
+
+### Version 0.4
+
 Implement WEBASSEMBLY IndexedDB and ServiceWorker with yew.
 Might also need to get https://github.com/rustwasm/wasm-bindgen/issues/441 IndexedDB added to web-sys crate.
 
@@ -42,14 +46,7 @@ Consider using one of the following javascript wrappers for IndexedDB or copying
   + https://github.com/erikolson186/zangodb
   + https://github.com/ujjwalguptaofficial/JsStore
 
-### Version 0.4
-
-JSON Export
 
 ### Version 0.5
 
 HTML Fetching for links
-
-### Version 0.6
-
-JSON API
