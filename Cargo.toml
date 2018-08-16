@@ -4,13 +4,14 @@ version = "0.1.0"
 authors = ["Luke Frisken <l.frisken@gmail.com>"]
 
 [dependencies]
-rocket = "0.3.15"
-rocket_codegen = "0.3.15"
+actix-web = "0.7.3"
 rust-embed = "3.0.1"
+mime_guess = "2.0.0-alpha.6"
+env_logger = "0.5.12"
 
 [dependencies.askama]
 version = "0.7"
-features = ["with-rocket"]
+features = ["with-actix-web"]
 
 [build-dependencies]
 askama = "0.7"

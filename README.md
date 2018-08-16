@@ -16,11 +16,11 @@ This interface will be exposed in this order:
 
 ### Version 0.1
 
-Simple HTTP GET and POST interface with Sqlite backend using rusqlite and rocket.
+ + [ ] Simple HTTP GET and POST interface with Sqlite backend using rusqlite or diesel and actix-web.
 
 ### Version 0.2
 
-Improve the user interface using some of the nice javascript libraries for laying out cards like google keep.
+ + [ ] Improve the user interface using some of the nice javascript libraries for laying out cards like google keep.
 
  + https://github.com/desandro/masonry
 
