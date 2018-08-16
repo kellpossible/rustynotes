@@ -1,5 +1,6 @@
 extern crate actix_web;
 extern crate env_logger;
+extern crate comrak;
 
 #[macro_use]
 extern crate askama;
@@ -8,16 +9,20 @@ extern crate askama;
 extern crate rust_embed;
 extern crate mime_guess;
 
+
 use actix_web::http::Method;
 use actix_web::middleware::Logger;
 use actix_web::{server, App, HttpRequest, HttpResponse, Result};
 use askama::Template;
 use mime_guess::guess_mime_type;
+use comrak::{markdown_to_html, ComrakOptions};
 
 #[derive(Template)]
-#[template(path = "index.html")]
+#[template(path = "index.html", escape = "none")]
 struct IndexTemplate<'a> {
+    debug: bool,
     name: &'a str,
+    markdown: String,
 }
 
 #[derive(RustEmbed)]
@@ -34,7 +39,12 @@ fn handle_static_file(path: &str) -> HttpResponse {
 }
 
 fn index(_req: HttpRequest) -> Result<HttpResponse> {
-    let s = IndexTemplate { name: "Luke" }.render().unwrap();
+    let s = IndexTemplate {
+        debug: cfg!(debug_assertions),
+        name: "Luke",
+        markdown: markdown_to_html("This **is** a test\n\n + [ ] this is a checkbox", &ComrakOptions { ext_tasklist: true, ..ComrakOptions::default()}),
+    }.render()
+    .unwrap();
     Ok(HttpResponse::Ok().content_type("text/html").body(s))
 }
 

@@ -36,7 +36,7 @@ Might also need to get https://github.com/rustwasm/wasm-bindgen/issues/441 Index
 There's a page here which recommends an approach: https://developers.google.com/web/fundamentals/instant-and-offline/web-storage/offline-for-pwa it recommends using the Service Worker Cache API for JS/CSS/HTML
 and using the IndexdDB for the page data.
 
-Consider using one of the following javascript wrappers for IndexedDB or copying their design for a Rust crate based on web-sys:
+Consider using one of the following JavaScript wrappers for IndexedDB or copying their design for a Rust crate based on web-sys:
 
   + https://github.com/jakearchibald/idb-keyval
   + https://github.com/localForage/localForage
@@ -46,6 +46,7 @@ Consider using one of the following javascript wrappers for IndexedDB or copying
   + https://github.com/erikolson186/zangodb
   + https://github.com/ujjwalguptaofficial/JsStore
 
+Consider using https://github.com/markedjs/marked if I decide to go with a JavaScript solution here.
 
 ### Version 0.5
 
