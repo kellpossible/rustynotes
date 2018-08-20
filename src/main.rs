@@ -1,6 +1,7 @@
 extern crate actix_web;
 extern crate env_logger;
 extern crate comrak;
+extern crate chrono;
 
 #[macro_use]
 extern crate askama;
@@ -9,6 +10,7 @@ extern crate askama;
 extern crate rust_embed;
 extern crate mime_guess;
 
+mod note;
 
 use actix_web::http::Method;
 use actix_web::middleware::Logger;
