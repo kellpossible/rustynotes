@@ -20,17 +20,19 @@ This interface will be exposed in this order:
 
 ### Version 0.2
 
- + [ ] Improve the user interface using some of the nice javascript libraries for laying out cards like google keep.
+ + [ ] Improve the user interface using some of the nice javascript libraries for laying out cards like google keep
+ + [ ] Password protection.
 
  + https://github.com/desandro/masonry
 
 ### Version 0.3
 
-Markdown export (export all as a zip of markdown documents), and markdown sync. Use Markdown documents instead of the database for storing the Markdown, and have the ability to sync to changes to these documents. This means you can edit and view your notes on your file system, and synchronise them with backup systems like dropbox, google drive, git, etc.
+ + [ ] Markdown export (export all as a zip of markdown documents), and markdown sync. Use Markdown documents instead of the database for storing the Markdown, and have the ability to sync to changes to these documents. This means you can edit and view your notes on your file system, and synchronise them with backup systems like dropbox, google drive, git, etc.
 
 ### Version 0.4
 
-Implement WEBASSEMBLY IndexedDB and ServiceWorker with yew.
+ + [ ] Implement WEBASSEMBLY IndexedDB and ServiceWorker with yew.
+
 Might also need to get https://github.com/rustwasm/wasm-bindgen/issues/441 IndexedDB added to web-sys crate.
 
 There's a page here which recommends an approach: https://developers.google.com/web/fundamentals/instant-and-offline/web-storage/offline-for-pwa it recommends using the Service Worker Cache API for JS/CSS/HTML
@@ -50,4 +52,10 @@ Consider using https://github.com/markedjs/marked if I decide to go with a JavaS
 
 ### Version 0.5
 
-HTML Fetching for links
+ + [ ] HTML Fetching for links
+
+
+### Version 0.6
+
+ + [ ] JSON Api
+ + [ ] Syncing implementation to allow user to run rustynotes on their local machine and have it sync to an instance on a server
