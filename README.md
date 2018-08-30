@@ -1,7 +1,7 @@
 # Rusty Notes
 
 This is an attempt to create something similar to Google Keep, written in Rust.
-The goal will be for it to be self contained in a single binary and easy to deploy to any server, using an Sqlite database.
+The goal will be for it to be self contained in a single binary and easy to deploy to any server.
 
 ## Plan
 
@@ -16,20 +16,21 @@ This interface will be exposed in this order:
 
 ### Version 0.1
 
- + [ ] Simple HTTP GET and POST interface with Sqlite backend using rusqlite or diesel and actix-web.
+ + [ ] Simple HTTP GET and POST interface
 
 ### Version 0.2
+
+ + [ ] Markdown export (export all as a zip of markdown documents), and markdown sync. Use Markdown documents instead of the database for storing the Markdown, and have the ability to sync to changes to these documents. This means you can edit and view your notes on your file system, and synchronise them with backup systems like dropbox, google drive, git, etc.
+ + [ ] Other data/index exported as plain text json
+  
+### Version 0.3
 
  + [ ] Improve the user interface using some of the nice javascript libraries for laying out cards like google keep
  + [ ] Password protection.
 
  + https://github.com/desandro/masonry
 
-### Version 0.3
-
- + [ ] Markdown export (export all as a zip of markdown documents), and markdown sync. Use Markdown documents instead of the database for storing the Markdown, and have the ability to sync to changes to these documents. This means you can edit and view your notes on your file system, and synchronise them with backup systems like dropbox, google drive, git, etc.
-
-### Version 0.4
+### Version ?
 
  + [ ] Implement WEBASSEMBLY IndexedDB and ServiceWorker with yew.
 
@@ -50,12 +51,15 @@ Consider using one of the following JavaScript wrappers for IndexedDB or copying
 
 Consider using https://github.com/markedjs/marked if I decide to go with a JavaScript solution here.
 
-### Version 0.5
+### Version ?
 
  + [ ] HTML Fetching for links
 
+### Version ?
 
-### Version 0.6
+ + [ ] Time tracking
+
+### Version ?
 
  + [ ] JSON Api
  + [ ] Syncing implementation to allow user to run rustynotes on their local machine and have it sync to an instance on a server
